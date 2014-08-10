@@ -1,0 +1,50 @@
+
+[class^="eg-"]{
+	padding: 1em  !important;
+}
+
+.eg-1 {
+    color: red;
+}
+
+.eg-2 {
+	color: white;
+    background: darkblue;
+}
+
+.eg-3 {
+	color: black;
+    background: green;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.eg-4 {
+	-webkit-animation : 2s spin infinite;
+	        animation : 2s spin infinite;
+}
+
+
+@-webkit-keyframes spin { 
+	0%{
+		-webkit-transform:rotate(0deg);
+		        transform:rotate(0deg); 
+	}
+	100% {
+		-webkit-transform:rotate(360deg);
+		        transform:rotate(360deg); 
+	} 
+}
+
+
+@keyframes spin { 
+	0%{
+		-webkit-transform:rotate(360deg);
+		        transform:rotate(360deg); 
+	}
+	100% {
+		-webkit-transform:rotate(360deg);
+		        transform:rotate(360deg); 
+	} 
+}
+
