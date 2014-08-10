@@ -48,3 +48,8 @@
 	} 
 }
 
+.cp_embed_iframe{
+	max-width: 100% !important;
+	max-height: 100% !important;
+	height: 530px;
+}
