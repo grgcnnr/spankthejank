@@ -58,3 +58,10 @@
 	box-shadow: none !important;
 	border: 0 !important;
 }
+
+.codetable{
+	width: 100%;
+}
+.reveal .codetable td{
+	text-align: center;
+}
