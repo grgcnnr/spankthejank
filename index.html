@@ -152,28 +152,71 @@
 
                     <div data-height="450" data-theme-id="7778" data-slug-hash="Lsekj" data-default-tab="result" class='codepen'></div>
 
-                    <a target="_blank" href="http://codepen.io/grgcnnr/full/Lsekj/">Fullscreen</a>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/Lsekj/">Fullscreen</a>
+                </section> 
+                <section>
+                    <h2>Properties that can trigger paints</h2>
+                    <table class="codetable">
+                        <tbody>
+                            <tr>
+                                <td><code>color</code></td>
+                                <td><code>border-style</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>visibility</code></td>
+                                <td><code>background</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>text-decoration</code></td>
+                                <td><code>background-image</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>background-position</code></td>
+                                <td><code>background-repeat</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>outline-color</code></td>
+                                <td><code>outline</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>outline-style</code></td>
+                                <td><code>border-radius</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>outline-width</code></td>
+                                <td><code>box-shadow</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>background-size</code></td>
+                                <td><code></code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <p>
+                        <small> source: <a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations">http://www.html5rocks.com</a></small>
+                    </p>
                 </section> 
 
-                <section>
+<!--                 <section>
                     <h2>Murraywobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="EaCpo" data-default-tab="html" class='codepen'>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="EaCpo" data-default-tab="result" class='codepen'>
                     </div>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/full/EaCpo/">Fullscreen</a>
-                </section> 
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/EaCpo/">Fullscreen</a>
+                </section>  -->
 
                 <section>
                     <h2>Cagewobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="html" class='codepen'>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="result" class='codepen'>
                     </div>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/full/FaJbv/">Fullscreen</a>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/FaJbv/">Fullscreen</a>
                 </section>  
 
                 <section>
                     <h2>Grizzelywobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="sowBu" data-default-tab="html" class='codepen'>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="sowBu" data-default-tab="result" class='codepen'>
                     </div>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/full/sowBu/">Fullscreen</a>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/sowBu/">Fullscreen</a>
                 </section>
                 <section>
                     <h2>A more real life example</h2>
@@ -199,6 +242,31 @@
                 </section> 
                 <section>
                     <h1>Caveats</h1>
+                    <ul>
+                        <li class="fragment">
+                            Every browser is (a bit) different<br> 
+                            <small>I've been talking about <b>Blink</b> in <b>Chrome</b> on <b>Windows 7</b></small>
+                        </li>
+                        <li class="fragment">
+                            Repaints aren't the end of the world<br> 
+                            <small>(especially if the browser isn't busy)</small>
+                        </li>
+                        <li class="fragment">
+                            GPU compositing isn't free<br>
+                            <small>We have limited bandwidth and VRAM</small>
+                        </li>
+                        <li class="fragment">"Native" implimentations aren't always fastest<br>
+                            <small>(but they should get faster)</small>
+                        </li>
+                        <li class="fragment">
+                            <del>Browsers are</del> CSS is getting smarter <br>
+                            <small>Look out for the &nbsp;<code> will-change </code>&nbsp; property in the dev channel of all major browsers</small>
+                        </li>
+                        <li class="fragment">
+                            Tools, not rules <br>
+                            <small>Every browser is different and they change all the time. Test.</small>
+                        </li>
+                    </ul>
 
                 </section>  
                 <section>
@@ -211,6 +279,9 @@
                         </p>
                         <p>
                             <a href="http://twitter.com/grgcnnr">@grgcnnr</a>
+                        </p>
+                        <p>
+                            for all the information: <a href="http://jankfree.org/">http://jankfree.org/</a>
                         </p>
 
                     </h3>
