@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+        .hello-div{
+            padding: 1em;
+            font-size: 2em;
+        }
+
+        body div:first-child{
+            color: green;
+            background: grey;
+        }
+
+        .hello-div.hello-div{
+            color: pink;
+            background: yellow;
+        }
+        html body .hello-div{
+            color: yellow;
+            background: black;
+        }
+
+        body div[class^="hello"]{
+            color: white;
+            background: darkblue;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="hello-div">
+            Hello, world
+        </div>
+    </body>
+</html>
