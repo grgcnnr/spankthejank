@@ -69,12 +69,15 @@
                 <section>
                     <h2>Warm up round 2.5 a</h2>
                     
-    <pre><code class="html">    &lt;div class="hello-div"&gt;
+    <pre><code class="html">    
+    &lt;div class="hello-div"&gt;
         Hello, World
-    &lt;/div&gt;</code></pre>
+    &lt;/div&gt;
+    </code></pre>
                     
                     
-    <pre><code class="css">    body div:first-child{
+    <pre><code class="css">    
+    body div:first-child{
         color: green; 
         background: grey;
     }
@@ -89,7 +92,9 @@
     body div[class^="hello"]{
         color: white; 
         background: darkblue;
-    }</code></pre>
+    }
+
+</code></pre>
 
                 </section>
                  <section>
@@ -145,15 +150,17 @@
                     </div>
                 </section>
                 <section>
+                    <h2>Document loaded</h2>
                     <img class="clearimage" src="img/renderpipe.svg" alt="">
                 </section >
                 <section>
+                    <h2>Document changed</h2>
                     <img class="clearimage" src="img/repaint.svg" alt="">
                 </section >
                 <section>
-                    <h2>Kittywobble</h2>
+                    <h2>Kitty lets paint!</h2>
 
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="Lsekj" data-default-tab="result" class='codepen'></div>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="Lsekj" data-default-tab="css" class='codepen'></div>
 
                     <a target="_blank" href="http://codepen.io/grgcnnr/pen/Lsekj/">Fullscreen</a>
                 </section> 
@@ -209,15 +216,15 @@
                 </section>  -->
 
                 <section>
-                    <h2>Cagewobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="result" class='codepen'>
+                    <h2>Caging the paint beast</h2>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="css" class='codepen'>
                     </div>
                     <a target="_blank" href="http://codepen.io/grgcnnr/pen/FaJbv/">Fullscreen</a>
                 </section>  
 
                 <section>
-                    <h2>Grizzelywobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="sowBu" data-default-tab="result" class='codepen'>
+                    <h2>Grizzely details</h2>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="sowBu" data-default-tab="css" class='codepen'>
                     </div>
                     <a target="_blank" href="http://codepen.io/grgcnnr/pen/sowBu/">Fullscreen</a>
                 </section>
@@ -234,6 +241,7 @@
                             With irresponsible JavaScript
                         </a>
                     </h3>
+                    <p>Layout Thrashing occurs when 'something' reads from then writes to the DOM multiple times causing document reflows each time.</p>
                 </section>  
                 <section>
                     <h1>Paint Storms</h1>
@@ -242,6 +250,8 @@
                             Pretty much the worst thing ever
                         </a>
                     </h3>
+                    <p>Paint storms sound cool but they are dumb</p>
+                    <p>They occur when something causes a big chunk of the document to be repainted continuously</p>
                 </section> 
                 <section>
                     <h1>Caveats</h1>
@@ -260,6 +270,10 @@
                         </li>
                         <li class="fragment">"Native" implimentations aren't always fastest<br>
                             <small>(but they should get faster)</small>
+                        </li>
+                        <li class="fragment">
+                            * {transform: translateZ(1)}<br>
+                            <small>Ha ha, no. Let browsers make up their own minds</small>
                         </li>
                         <li class="fragment">
                             <del>Browsers are</del> CSS is getting smarter <br>
