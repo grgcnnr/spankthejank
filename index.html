@@ -32,10 +32,15 @@
 
                 <section>
                     <h2>What's up with jank?</h2>
-                    <h3>Jank is what happens when a browser struggles to do something visual at a constant framerate, or at a framerate that's fast enought to look smooth</h3>
-                    <div class="fragment">
+                    <h3>Jank is what happens when a browser struggles to do something visual at a constant framerate, or at a framerate that's fast enough to look smooth</h3>
+                    <p>
                         Anything above 30fps is fine but 60fps is the goal
-                    </div>
+                    </p>
+
+                    <aside class="notes">
+                        <p>Jank makes user experience suck</p>
+                        <p>It's more important to be consitent than fast</p>
+                    </aside>
                 </section>
 
                 <section>
@@ -166,7 +171,7 @@
                 <section>
                     <h2>Kitty lets paint!</h2>
 
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="Lsekj" data-default-tab="css" class='codepen'></div>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="Lsekj" data-default-tab="result" class='codepen'></div>
 
                     <a target="_blank" href="http://codepen.io/grgcnnr/pen/Lsekj/">Fullscreen</a>
                 </section> 
@@ -174,6 +179,26 @@
                     <h2>Document changed... You have 16ms</h2>
                     <img class="clearimage" src="img/repaint.svg" alt="">
                 </section>
+
+<!--                 <section>
+                    <h2>Murraywobble</h2>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="EaCpo" data-default-tab="result" class='codepen'>
+                    </div>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/EaCpo/">Fullscreen</a>
+                </section>  -->
+
+                <section>
+                    <h2>Caging paint</h2>
+                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="css" class='codepen'>
+                    </div>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/FaJbv/">Fullscreen</a>
+                </section>
+
+               <section>
+                    <h2>Layer promotion</h2>
+                    <img class="clearimage" src="img/composit.svg" alt="">
+                </section>
+
                 <section>
                     <h2>Properties that can trigger paints</h2>
                     <table class="codetable">
@@ -218,37 +243,13 @@
                     </p>
                 </section> 
 
-<!--                 <section>
-                    <h2>Murraywobble</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="EaCpo" data-default-tab="result" class='codepen'>
-                    </div>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/EaCpo/">Fullscreen</a>
-                </section>  -->
-
-                <section>
-                    <h2>Caging paint</h2>
-                    <div data-height="450" data-theme-id="7778" data-slug-hash="FaJbv" data-default-tab="css" class='codepen'>
-                    </div>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/FaJbv/">Fullscreen</a>
-                </section>  
-
-                <section>
-                    <h2>Layer promotion</h2>
-                    <img class="clearimage" src="img/composit.svg" alt="">
-                </section>
-
                 <section>
                     <h2>Grizzely details</h2>
                     <div data-height="450" data-theme-id="7778" data-slug-hash="sowBu" data-default-tab="css" class='codepen'>
                     </div>
                     <a target="_blank" href="http://codepen.io/grgcnnr/pen/sowBu/">Fullscreen</a>
                 </section>
-                <section>
-                    <h2>A more real life example</h2>
-                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/CDbLA">
-                        <img src="img/offcanvas.gif">
-                    </a>
-                </section>  
+ 
                 <section>
                     <h1>Layout Thrashing</h1>
                     <h3>
@@ -257,6 +258,26 @@
                         </a>
                     </h3>
                     <p>Layout Thrashing occurs when 'something' reads from then writes to the DOM multiple times causing document reflows each time.</p>
+                </section> 
+                <section>
+                    <h1>Layout Thrashing</h1>
+<pre><code class="css">
+    // read/write
+    foo2.width = foo1.width;
+    
+    // read/write
+    bar2.width = bar1.width;
+ </code></pre>
+                    <p>is slower than</p>
+<pre><code class="css">   
+    // read
+    fw = foo1.width;
+    bw = bar1.width;
+    
+    // then write
+    foo2.width = fw;
+    bar2.width = bw;
+ </code></pre>
                 </section>  
                 <section>
                     <h1>Paint Storms</h1>
@@ -318,8 +339,12 @@
 
                     </h3>
                 </section>  
-
-
+                <section>
+                    <h2>A more real life example</h2>
+                    <a target="_blank" href="http://codepen.io/grgcnnr/pen/CDbLA">
+                        <img src="img/offcanvas.gif">
+                    </a>
+                </section> 
 
             </div>
         </div>
