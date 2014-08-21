@@ -21,8 +21,8 @@
 * Done with $animate
 * Updating the DOM with every frame
 * Dev tools
-	-- Paint rect
-	-- Mobile Benchmark
+	* Paint rect
+	* Mobile Benchmark
 * Big paint overhead - gets bigger with more nodes
 * Massive JS overhead
 
@@ -62,12 +62,12 @@
 
 * Lets move all the resizing onto the gpu
 * Dev tools
-	-- Paint rect
-	-- Mobile Benchmark
+	* Paint rect
+	* Mobile Benchmark
 * Takeaways:
-	-- No Painting
-	-- No scripting
-	-- Awesome
+	* No Painting
+	* No scripting
+	* Awesome
 
 
 
